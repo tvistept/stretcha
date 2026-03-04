@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
@@ -8,11 +7,9 @@ import CoursePlayerPage from './components/CoursePlayerPage';
 import './App.css';
 
 function App() {
-  console.log('App: rendering with routes');
-  
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/stretcha">
         <div className="App">
           <Routes>
             <Route path="/" element={<CoursesPage />} />
