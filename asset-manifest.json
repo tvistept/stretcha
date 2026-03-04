@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stretcha/static/css/main.e57e5dc8.css",
+    "main.js": "/stretcha/static/js/main.3bde1ac9.js",
+    "static/js/453.2baa99a5.chunk.js": "/stretcha/static/js/453.2baa99a5.chunk.js",
+    "index.html": "/stretcha/index.html",
+    "main.e57e5dc8.css.map": "/stretcha/static/css/main.e57e5dc8.css.map",
+    "main.3bde1ac9.js.map": "/stretcha/static/js/main.3bde1ac9.js.map",
+    "453.2baa99a5.chunk.js.map": "/stretcha/static/js/453.2baa99a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e57e5dc8.css",
+    "static/js/main.3bde1ac9.js"
+  ]
+}
