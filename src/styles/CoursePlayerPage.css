@@ -1,0 +1,425 @@
+.course-player-page {
+  --bg-page: #f7f5f1;
+  --bg-card: #fdfcf9;
+  --text-primary: #2c3e50;
+  --text-secondary: #5a6b7a;
+  --button-color: #499971;
+  --border-color: rgba(0, 0, 0, 0.05);
+  --shadow: rgba(0, 0, 0, 0.03);
+  --progress-bg: rgba(73, 153, 113, 0.2);
+  
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.course-player-page.dark-theme {
+  --bg-page: #1a1e24;
+  --bg-card: #2d333b;
+  --text-primary: #e1e6ec;
+  --text-secondary: #a0a8b5;
+  --button-color: #5bbd8c;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow: rgba(0, 0, 0, 0.2);
+  --progress-bg: rgba(91, 189, 140, 0.15);
+}
+
+/* Прогресс-бар */
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--progress-bg);
+  z-index: 100;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--button-color);
+  transition: width 0.3s ease;
+}
+
+/* Шапка плеера */
+.player-header {
+  max-width: 800px;
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.player-header .back-button {
+  background: none;
+  border: none;
+  color: var(--button-color);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 40px;
+  transition: background-color 0.2s ease;
+}
+
+.player-header .back-button:hover {
+  background-color: var(--progress-bg);
+}
+
+.course-title {
+  text-align: center;
+}
+
+.player-header .course-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.exercise-counter {
+  font-size: 1.2rem;
+  color: var(--button-color);
+  font-weight: 500;
+}
+
+/* Контейнер упражнения */
+.exercise-container {
+  max-width: 800px;
+  margin: 0 auto 0px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Экран упражнения */
+.exercise-screen {
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 60px 40px;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px var(--shadow);
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercise-name {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.exercise-original {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+.exercise-timer {
+  font-size: 6rem;
+  font-weight: 300;
+  color: var(--button-color);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Экран отдыха */
+.rest-screen {
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 60px 40px;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px var(--shadow);
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rest-label {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  display: block;
+  letter-spacing: 4px;
+}
+
+.rest-timer {
+  font-size: 6rem;
+  font-weight: 300;
+  color: var(--button-color);
+  line-height: 1;
+  margin-bottom: 24px;
+  font-variant-numeric: tabular-nums;
+}
+
+.next-exercise-label {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+/* Управление */
+.player-controls {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.main-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.control-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-button.primary {
+  background-color: var(--button-color);
+  color: white;
+  min-width: 120px;
+}
+
+.control-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(73, 153, 113, 0.3);
+}
+
+.control-button.secondary {
+  background-color: transparent;
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+}
+
+.control-button.secondary:hover:not(:disabled) {
+  background-color: var(--button-color);
+  color: white;
+}
+
+.control-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Превью списка упражнений */
+.exercise-list-preview {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercise-list-preview h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.preview-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+  /* max-height: 200px; */
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.preview-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: var(--bg-page);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.preview-item:hover {
+  background-color: var(--progress-bg);
+}
+
+.preview-item.current {
+  background-color: var(--button-color);
+  color: white;
+}
+
+.preview-item.current .preview-number {
+  background-color: white;
+  color: var(--button-color);
+}
+
+.preview-item.completed {
+  opacity: 0.7;
+}
+
+.preview-number {
+  width: 24px;
+  height: 24px;
+  background-color: var(--button-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.preview-name {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.completed-mark {
+  color: var(--button-color);
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/* Экран завершения */
+.completion-screen {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 60px 40px;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.completion-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.completion-message {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.completion-submessage {
+  font-size: 1.1rem;
+  color: var(--button-color);
+  margin-bottom: 40px;
+}
+
+.back-to-course-button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-to-course-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(73, 153, 113, 0.4);
+}
+
+.error-screen {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 60px 40px;
+  border-radius: 40px;
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
+.error-screen h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .exercise-name {
+    font-size: 2rem;
+  }
+  
+  .exercise-timer,
+  .rest-timer {
+    font-size: 4rem;
+  }
+  
+  .player-controls {
+    flex-direction: column;
+  }
+  
+  .main-controls {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+  }
+  
+  .preview-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .completion-title {
+    font-size: 2rem;
+  }
+  
+  .completion-message {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .exercise-container {
+    min-height: 300px;
+  }
+  
+  .exercise-screen,
+  .rest-screen {
+    padding: 40px 20px;
+  }
+  
+  .exercise-name {
+    font-size: 1.5rem;
+  }
+  
+  .exercise-timer,
+  .rest-timer {
+    font-size: 3rem;
+  }
+}

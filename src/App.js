@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
+import CoursesPage from './components/CoursesPage';
+import CourseDetailPage from './components/CourseDetailPage';
+import CoursePlayerPage from './components/CoursePlayerPage';
 import './App.css';
 
 function App() {
+  console.log('App: rendering with routes');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<CoursesPage />} />
+            <Route path="/course/:id" element={<CourseDetailPage />} />
+            <Route path="/course/:id/play" element={<CoursePlayerPage />} />
+          </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

@@ -1,0 +1,43 @@
+/* src/components/ThemeToggle.css */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 2px solid var(--button-color);
+  background-color: transparent;
+  color: var(--button-color);
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  margin-left: auto;
+}
+
+.theme-toggle:hover {
+  background-color: var(--button-color);
+  color: white;
+}
+
+.theme-toggle:hover .toggle-icon {
+  transform: rotate(15deg);
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.toggle-text {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    padding: 6px 12px;
+  }
+  
+  .toggle-text {
+    display: none; /* На мобильных устройствах скрываем текст, оставляем только иконку */
+  }
+}
