@@ -47,11 +47,11 @@
 /* Шапка плеера */
 .player-header {
   max-width: 800px;
-  margin: 20px auto 10px;
+  margin: 0px auto 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .player-header .back-button {
@@ -69,8 +69,9 @@
   background-color: var(--progress-bg);
 }
 
-.course-title {
+.player-course-title {
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .player-header .course-title {

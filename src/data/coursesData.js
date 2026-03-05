@@ -9,6 +9,7 @@ const coursesData = [
     durationText: '12 минут',
     intensity: 'Низкая',
     category: 'Расслабление',
+    icon: 'cat',
     image: '🏔️', // Можно заменить на реальные изображения позже
     exercises: [
       { id: 1, name: 'Поза младенца', originalName: 'Child\'s Pose', duration: 30 },
@@ -41,6 +42,7 @@ const coursesData = [
     intensity: 'Средняя',
     category: 'Восстановление',
     image: '🏃',
+    icon: 'personRunning',
     exercises: [
       { id: 1, name: 'Выпад с захватом стопы (правая)', originalName: 'Standing Quad Stretch R', duration: 30 },
       { id: 2, name: 'Выпад с захватом стопы (левая)', originalName: 'Standing Quad Stretch L', duration: 30 },

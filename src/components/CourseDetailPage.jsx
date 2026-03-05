@@ -37,7 +37,7 @@ const CourseDetailPage = () => {
 
   return (
     <div className={`course-detail-page ${isDarkMode ? 'dark-theme' : ''}`}>
-      <div className="page-header">
+      <div className="detail-page-header">
         <button className="back-button" onClick={handleBack}>
           ← Назад к курсам
         </button>

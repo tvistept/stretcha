@@ -228,8 +228,8 @@ const CoursePlayerPage = () => {
           {currentExerciseIndex + 1} / {totalExercises}
         </div>
       </div>
-      <h2 className="course-title">{course.title}</h2>
-
+      
+      <h2 className="player-course-title">{course.title}</h2>
       <div className="exercise-container">
         {isRest ? (
           <div className="rest-screen">
