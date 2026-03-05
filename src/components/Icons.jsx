@@ -32,6 +32,7 @@ import {
   faExclamationCircle,
   faSpinner,
   faCalendarPlus,
+  faUserCheck,
   
   // Regular icons (если нужны)
   faCalendarAlt,
@@ -73,6 +74,7 @@ export const Icons = {
   checkCircle: faCheckCircle,
   spinner: faSpinner,
   calendarPlus: faCalendarPlus,
+  userCheck: faUserCheck,
   
   // Алиасы для удобства
   loading: faSpinner

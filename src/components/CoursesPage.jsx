@@ -51,7 +51,6 @@ const CoursesPage = () => {
         <div className="courses-grid">
           {courses.map(course => (
             <div key={course.id} className="course-card" onClick={() => handleCourseClick(course.id)}>
-              {/* <div className="course-image">{course.image}</div> */}
               <div className="card-icon" style={{ backgroundColor: '#499971' + '20' }}>
                 <Icon 
                   name={course.icon}

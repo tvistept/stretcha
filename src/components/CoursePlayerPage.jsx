@@ -244,7 +244,11 @@ const CoursePlayerPage = () => {
         ) : (
           <div className="exercise-screen">
             <h1 className="exercise-name">{currentExercise.name}</h1>
-            {/* <p className="exercise-original">{currentExercise.originalName}</p> */}
+            <img 
+              src={currentExercise.image} 
+              alt={currentExercise.name} 
+              className="exercise-image"
+            />
             <div className="exercise-timer">{formatTime(timeLeft)}</div>
           </div>
         )}
