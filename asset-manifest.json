@@ -1,16 +1,29 @@
 {
   "files": {
-    "main.css": "/stretcha/static/css/main.b7e9b951.css",
-    "main.js": "/stretcha/static/js/main.f38903da.js",
+    "main.css": "/stretcha/static/css/main.b08c8439.css",
+    "main.js": "/stretcha/static/js/main.ec41706d.js",
     "static/js/453.2baa99a5.chunk.js": "/stretcha/static/js/453.2baa99a5.chunk.js",
+    "static/media/thread_needle1.png": "/stretcha/static/media/thread_needle1.5ff063840a5768abd336.png",
+    "static/media/bridge.png": "/stretcha/static/media/bridge.735bf7c716f84aa4272a.png",
+    "static/media/seated_twist.png": "/stretcha/static/media/seated_twist.a5ac8ffd8b542a3d6636.png",
+    "static/media/yogi_squat.png": "/stretcha/static/media/yogi_squat.a0a228c4baa3d2245b93.png",
+    "static/media/sphynx.png": "/stretcha/static/media/sphynx.8035602b1a2a0023ae7e.png",
+    "static/media/full_body_stretch.png": "/stretcha/static/media/full_body_stretch.e8caddfc701ac3110264.png",
+    "static/media/pigeon.png": "/stretcha/static/media/pigeon.e58d30eaaaf99509635e.png",
+    "static/media/knee_hug.png": "/stretcha/static/media/knee_hug.58608d41740f4a2983ce.png",
+    "static/media/twist_lying.png": "/stretcha/static/media/twist_lying.c378bb2de27cab65d770.png",
+    "static/media/cat_cow.png": "/stretcha/static/media/cat_cow.ee03dfb735656a056451.png",
+    "static/media/child_pose.png": "/stretcha/static/media/child_pose.11d72fbfdf2ecd1950b2.png",
+    "static/media/bend_forward.png": "/stretcha/static/media/bend_forward.7bb73c3c4d66477a2cb8.png",
+    "static/media/relaxation.png": "/stretcha/static/media/relaxation.1a2dbf6a69a5dadaebe8.png",
     "static/media/stretcha_logo.png": "/stretcha/static/media/stretcha_logo.b522e512b598c37e724e.png",
     "index.html": "/stretcha/index.html",
-    "main.b7e9b951.css.map": "/stretcha/static/css/main.b7e9b951.css.map",
-    "main.f38903da.js.map": "/stretcha/static/js/main.f38903da.js.map",
+    "main.b08c8439.css.map": "/stretcha/static/css/main.b08c8439.css.map",
+    "main.ec41706d.js.map": "/stretcha/static/js/main.ec41706d.js.map",
     "453.2baa99a5.chunk.js.map": "/stretcha/static/js/453.2baa99a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7e9b951.css",
-    "static/js/main.f38903da.js"
+    "static/css/main.b08c8439.css",
+    "static/js/main.ec41706d.js"
   ]
 }
