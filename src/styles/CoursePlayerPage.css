@@ -102,7 +102,7 @@
 .exercise-screen {
   text-align: center;
   background-color: var(--bg-card);
-  padding: 60px 40px;
+  padding: 20px 40px;
   margin-bottom: 20px;
   border-radius: 40px;
   box-shadow: 0 20px 40px var(--shadow);
@@ -370,7 +370,7 @@
 }
 
 .exercise-image {
-  max-width: 200px;
+  max-width: 350px;
   max-height: 200px;
   margin: 20px auto;
   display: block;
@@ -427,7 +427,7 @@
   
   .exercise-screen,
   .rest-screen {
-    padding: 40px 20px;
+    padding: 20px 20px;
   }
   
   .exercise-name {

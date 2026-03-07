@@ -36,7 +36,7 @@ const coursesData = [
       { id: 8, name: 'Скручивание сидя (правое)', originalName: 'Seated Twist R', duration: 30, image: seatedTwist },
       { id: 9, name: 'Скручивание сидя (левое)', originalName: 'Seated Twist L', duration: 30, image: seatedTwist },
       { id: 10, name: 'Обнимание коленей', originalName: 'Knees to Chest', duration: 30, image: kneeHug },
-      { id: 11, name: 'Динамический мостик на плечах', originalName: 'Dynamic Shoulder Bridge', duration: 30, image: bridgePose },
+      { id: 11, name: 'Динамический мостик', originalName: 'Dynamic Shoulder Bridge', duration: 30, image: bridgePose },
       { id: 12, name: 'Поза голубя лёжа (правая)', originalName: 'Reclined Pigeon R', duration: 30, image: pigeonPose },
       { id: 13, name: 'Поза голубя лёжа (левая)', originalName: 'Reclined Pigeon L', duration: 30, image: pigeonPose },
       { id: 14, name: 'Растяжка всего тела лёжа', originalName: 'Full Body Stretch', duration: 30, image: fullBodyStretch },

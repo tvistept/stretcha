@@ -197,14 +197,14 @@ const CoursePlayerPage = () => {
     return (
       <div className={`course-player-page ${isDarkMode ? 'dark-theme' : ''}`}>
         <div className="completion-screen">
-          <h1 className="completion-title">Практика завершена! 🎉</h1>
+          <h1 className="completion-title">Практика завершена!</h1>
           <p className="completion-message">
             Отличная работа! Ты успешно выполнил все {totalExercises} упражнений.
           </p>
           <p className="completion-submessage">
             {course.title === 'Поясница' 
-              ? 'Твоя спина скажет тебе спасибо! 🙏' 
-              : 'Твои мышцы отдохнут! 🏃'}
+              ? 'Твоя спина скажет тебе спасибо!' 
+              : 'Твои мышцы отдохнут!'}
           </p>
           <button className="back-to-course-button" onClick={handleBack}>
             Вернуться к курсу
@@ -244,11 +244,14 @@ const CoursePlayerPage = () => {
         ) : (
           <div className="exercise-screen">
             <h1 className="exercise-name">{currentExercise.name}</h1>
-            <img 
-              src={currentExercise.image} 
-              alt={currentExercise.name} 
-              className="exercise-image"
-            />
+            {currentExercise.image ?
+              <img 
+                src={currentExercise.image} 
+                alt={currentExercise.name} 
+                className="exercise-image"
+              /> : null
+            }
+            
             <div className="exercise-timer">{formatTime(timeLeft)}</div>
           </div>
         )}
