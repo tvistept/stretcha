@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stretcha/static/css/main.b08c8439.css",
-    "main.js": "/stretcha/static/js/main.ec41706d.js",
+    "main.css": "/stretcha/static/css/main.4d4e441e.css",
+    "main.js": "/stretcha/static/js/main.9c29c2f5.js",
     "static/js/453.2baa99a5.chunk.js": "/stretcha/static/js/453.2baa99a5.chunk.js",
     "static/media/thread_needle1.png": "/stretcha/static/media/thread_needle1.5ff063840a5768abd336.png",
     "static/media/bridge.png": "/stretcha/static/media/bridge.735bf7c716f84aa4272a.png",
@@ -18,12 +18,12 @@
     "static/media/relaxation.png": "/stretcha/static/media/relaxation.1a2dbf6a69a5dadaebe8.png",
     "static/media/stretcha_logo.png": "/stretcha/static/media/stretcha_logo.b522e512b598c37e724e.png",
     "index.html": "/stretcha/index.html",
-    "main.b08c8439.css.map": "/stretcha/static/css/main.b08c8439.css.map",
-    "main.ec41706d.js.map": "/stretcha/static/js/main.ec41706d.js.map",
+    "main.4d4e441e.css.map": "/stretcha/static/css/main.4d4e441e.css.map",
+    "main.9c29c2f5.js.map": "/stretcha/static/js/main.9c29c2f5.js.map",
     "453.2baa99a5.chunk.js.map": "/stretcha/static/js/453.2baa99a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b08c8439.css",
-    "static/js/main.ec41706d.js"
+    "static/css/main.4d4e441e.css",
+    "static/js/main.9c29c2f5.js"
   ]
 }
